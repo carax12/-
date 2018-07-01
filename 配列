@@ -1,13 +1,16 @@
-while var_a < input.length {
-    var_b = var_a + 1;
-    while var_b < input.length {
-        if input[var_a] > input[var_b] {
-            var_c = input[var_a];
-            input[var_a] = input[var_b];
-            input[var_b] = var_c;
-        }
-        var_b++;
-    }
-    var_a++;
-}
-return input;
+var_a = 0
+var_b = 0
+list = [3,2,5,6]
+while var_a < len(list):
+    var_b = var_a + 1
+    while var_b < len(list):
+        if list[var_a] > list[var_b]:
+            var_c = list[var_a]
+            list[var_a] = list[var_b]
+            list[var_b] = var_c
+        
+        var_b = var_b + 1
+    
+    var_a = var_a + 1
+
+print(list)
