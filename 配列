@@ -1,0 +1,13 @@
+while var_a < input.length {
+    var_b = var_a + 1;
+    while var_b < input.length {
+        if input[var_a] > input[var_b] {
+            var_c = input[var_a];
+            input[var_a] = input[var_b];
+            input[var_b] = var_c;
+        }
+        var_b++;
+    }
+    var_a++;
+}
+return input;
